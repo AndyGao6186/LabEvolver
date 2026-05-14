@@ -1,7 +1,24 @@
 # Learning from Execution
 
-Project page for autonomous closed-loop chemistry experiments with embodied laboratory agents.
+Project page for the embodied laboratory agent experiments summarized in `0511 实验总结`.
 
-Public page URL after GitHub Pages is enabled:
+## Structure
 
-https://andygao6186.github.io/Learning-from-Execution/
+- `index.html`: project homepage
+- `assets/images/`: figures exported from the Feishu document
+- `assets/videos/`: annotated experiment video, if hosted directly or replaced by an external URL
+
+## GitHub Pages
+
+Recommended repository name:
+
+```text
+Learning-from-Execution
+```
+
+The public project title shown on the page is:
+
+```text
+Learning from Execution
+```
+
