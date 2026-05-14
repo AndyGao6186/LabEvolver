@@ -12,7 +12,7 @@ Project page for the embodied laboratory agent experiments summarized in `0511 å
 
 Page link:
 
-[Learning-from-Execution](https://andygao6186.github.io/Learning-from-Execution/)
+[[Learning-from-Execution](https://andygao6186.github.io/Learning-from-Execution/)](https://andygao6186.github.io/Learning-from-Execution/)
 
 The public project title shown on the page is:
 
