@@ -13,6 +13,7 @@ LabEvolver is a state-grounded, training-free dual-loop framework that combines 
 ## Structure
 
 - `index.html`: GitHub Pages project homepage
+- English and Chinese interfaces with a persistent top-right language switcher
 - `assets/images/labevolver/`: latest paper figures
 - existing historical figures remain available under `assets/images/`
 - the existing annotated experiment video is retained at the `video-v1` GitHub Release URL
