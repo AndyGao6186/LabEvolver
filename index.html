@@ -107,14 +107,27 @@
       letter-spacing: 0.04em;
       text-transform: uppercase;
     }
-    h1 {
-      max-width: 1080px;
-      margin: 20px auto 14px;
-      color: var(--ink);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(52px, 8.5vw, 92px);
-      line-height: 0.98;
-      letter-spacing: -0.055em;
+    .hero-logo-title {
+      margin: 22px auto 14px;
+      font-size: 0;
+      line-height: 0;
+    }
+    .hero-logo-viewport {
+      position: relative;
+      display: block;
+      width: min(82vw, 820px);
+      aspect-ratio: 1685 / 385;
+      margin-inline: auto;
+      overflow: hidden;
+    }
+    .hero-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 116.9733%;
+      max-width: none;
+      height: auto;
+      transform: translate(-0.4566%, -2.6442%);
     }
     .hero-title {
       max-width: 980px;
@@ -322,7 +335,7 @@
       .lang-toggle { right: 14px; }
       .hero { padding: 48px 18px 44px; }
       .eyebrow { max-width: 100%; white-space: normal; text-align: center; font-size: 11px; letter-spacing: 0.02em; }
-      h1 { font-size: 46px; letter-spacing: -0.045em; }
+      .hero-logo-viewport { width: 100%; max-width: 520px; }
       .hero-title { font-size: 18px; }
       .actions { width: 100%; display: grid; grid-template-columns: 1fr; }
       .button { width: 100%; }
@@ -353,7 +366,11 @@
   <header id="top">
     <div class="hero">
       <span class="eyebrow" data-i18n="hero.eyebrow">State-Grounded Execution · Training-Free Experience Evolution</span>
-      <h1>LabEvolver</h1>
+      <h1 class="hero-logo-title">
+        <span class="hero-logo-viewport">
+          <img class="hero-logo" src="assets/images/labevolver/labevolver-logo.png" alt="LabEvolver">
+        </span>
+      </h1>
       <p class="hero-title" data-i18n="hero.title">Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents</p>
       <p class="hero-copy" data-i18n="hero.copy">LabEvolver couples a state-grounded inner trial loop for adaptive perception, online planning, and safety validation with an outer evolution loop that distills completed trajectories into reusable skill, strategy, and safety experience.</p>
       <div class="actions">
