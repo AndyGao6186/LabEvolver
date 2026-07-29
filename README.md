@@ -1,20 +1,22 @@
-# Learning from Execution
+# LabEvolver — Learning from Execution
 
-Project page for the embodied laboratory agent experiments summarized in `0511 实验总结`.
+Project page for **LabEvolver: Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents**.
+
+LabEvolver is a state-grounded, training-free dual-loop framework that combines safe closed-loop embodied execution with post-trial experience evolution. The latest page summarizes:
+
+- the inner trial loop and outer evolution loop;
+- ALFWorld continual evaluation over 500 tasks;
+- transferable quantitative-pouring skills;
+- closed-loop pH regulation;
+- coupled pH–EC multi-objective regulation.
 
 ## Structure
 
-- `index.html`: project homepage
-- `assets/images/`: figures exported from the Feishu document
-- `assets/videos/`: annotated experiment video, if hosted directly or replaced by an external URL
+- `index.html`: GitHub Pages project homepage
+- `assets/images/labevolver/`: latest paper figures
+- existing historical figures remain available under `assets/images/`
+- the existing annotated experiment video is retained at the `video-v1` GitHub Release URL
 
-## GitHub Pages
+## Project page
 
-Page link:
-
-[https://andygao6186.github.io/Learning-from-Execution](https://andygao6186.github.io/Learning-from-Execution/)
-
-The public project title shown on the page is:
-
-```text
-Learning from Execution
+[https://andygao6186.github.io/LabEvolver/](https://andygao6186.github.io/LabEvolver/)
