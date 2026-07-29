@@ -1,4 +1,4 @@
-# LabEvolver — Learning from Execution
+# LabEvolver
 
 Project page for **LabEvolver: Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents**.
 
