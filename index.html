@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="LabEvolver is a training-free dual-loop framework for safe, state-grounded wet-lab agents that learn reusable experience from execution.">
-  <title>LabEvolver — Learning from Execution</title>
+  <title>LabEvolver — Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents</title>
   <style>
     :root {
       --ink: #18212f;
@@ -186,8 +186,8 @@
       margin: 0 0 16px;
       color: var(--ink);
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(32px, 4vw, 48px);
-      line-height: 1.08;
+      font-size: clamp(31px, 3.4vw, 42px);
+      line-height: 1.12;
       letter-spacing: -0.025em;
     }
     h3 { margin: 0 0 8px; color: var(--ink); font-size: 19px; line-height: 1.3; }
@@ -264,8 +264,8 @@
 
     .result-row {
       display: grid;
-      grid-template-columns: minmax(210px, 0.42fr) minmax(0, 1.58fr);
-      gap: 22px;
+      grid-template-columns: minmax(280px, 0.68fr) minmax(0, 1.32fr);
+      gap: 28px;
       align-items: center;
       margin-top: 28px;
       padding-top: 28px;
@@ -284,8 +284,10 @@
       letter-spacing: 0.04em;
       text-transform: uppercase;
     }
-    .result-copy h3 { margin-top: 11px; font-size: 23px; }
-    .result-copy p { color: var(--muted); font-size: 15px; }
+    .result-copy h3 { margin-top: 11px; font-size: 24px; }
+    .result-copy p { color: var(--muted); font-size: 16px; line-height: 1.72; }
+    .result-row .media { background: #fbfcfe; }
+    .result-row .media img { max-height: 560px; object-fit: contain; }
 
     .table-wrap { margin-top: 20px; overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; }
     table { width: 100%; border-collapse: collapse; min-width: 680px; font-size: 14px; }
@@ -350,10 +352,10 @@
 
   <header id="top">
     <div class="hero">
-      <span class="eyebrow" data-i18n="hero.eyebrow">Learning from Execution · Embodied Laboratory Agents</span>
+      <span class="eyebrow" data-i18n="hero.eyebrow">State-Grounded Execution · Training-Free Experience Evolution</span>
       <h1>LabEvolver</h1>
       <p class="hero-title" data-i18n="hero.title">Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents</p>
-      <p class="hero-copy" data-i18n="hero.copy">A state-grounded dual-loop framework that turns completed embodied trajectories into reusable skill, strategy, and safety experience—without updating model weights.</p>
+      <p class="hero-copy" data-i18n="hero.copy">LabEvolver couples a state-grounded inner trial loop for adaptive perception, online planning, and safety validation with an outer evolution loop that distills completed trajectories into reusable skill, strategy, and safety experience.</p>
       <div class="actions">
         <a class="button primary" href="#results" data-i18n="hero.results">Explore results</a>
         <a class="button" href="https://github.com/AndyGao6186/LabEvolver" data-i18n="hero.repository">Repository</a>
@@ -367,9 +369,9 @@
 
   <main>
     <section id="overview">
-      <p class="section-kicker" data-i18n="overview.kicker">Why LabEvolver</p>
-      <h2 data-i18n="overview.title">From static automation to learn-by-doing autonomy</h2>
-      <p class="lead" data-i18n="overview.copy">Real laboratories are dynamic physical environments. An autonomous agent must plan from changing states, respect instrument and safety constraints, and improve from costly trials. LabEvolver addresses all three requirements in a single training-free framework.</p>
+      <p class="section-kicker" data-i18n="overview.kicker">Toward automated scientific discovery</p>
+      <h2 data-i18n="overview.title">From state-valid control to learn-by-doing autonomy</h2>
+      <p class="lead" data-i18n="overview.copy">Autonomous laboratories should accumulate episodic memory from concrete operations so that planning, cognition, and action improve together through practice. LabEvolver operationalizes this capability through a nested dual-loop process.</p>
       <div class="metric-grid">
         <div class="metric"><b>91.4%</b><span data-i18n="metric.alfworld">cumulative Success@20 over 500 continual ALFWorld tasks</span></div>
         <div class="metric"><b>95.3%</b><span data-i18n="metric.pouring">successful locked-parameter pouring validations within ±0.2 g</span></div>
@@ -380,7 +382,7 @@
 
     <section id="method">
       <p class="section-kicker" data-i18n="method.kicker">Nested dual-loop framework</p>
-      <h2 data-i18n="method.title">Ground every action. Evolve every trial.</h2>
+      <h2 data-i18n="method.title">State-grounded execution. Experience evolution.</h2>
       <div class="grid-2">
         <div class="card blue">
           <span class="step">1</span>
@@ -483,32 +485,32 @@
     </section>
   </main>
 
-  <footer data-i18n="footer">LabEvolver · Learning from Execution · Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents</footer>
+  <footer data-i18n="footer">LabEvolver · Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents</footer>
   <script>
     const translations = {
       en: {
-        "meta.title": "LabEvolver — Learning from Execution",
-        "meta.description": "LabEvolver is a training-free dual-loop framework for safe, state-grounded wet-lab agents that learn reusable experience from execution.",
+        "meta.title": "LabEvolver — Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents",
+        "meta.description": "LabEvolver is a training-free framework that equips safe and grounded wet-lab agents with episodic memory from execution experience.",
         "nav.overview": "Overview",
         "nav.method": "Method",
         "nav.results": "Results",
         "nav.wetlab": "Wet Lab",
         "nav.video": "Video",
-        "hero.eyebrow": "Learning from Execution · Embodied Laboratory Agents",
+        "hero.eyebrow": "State-Grounded Execution · Training-Free Experience Evolution",
         "hero.title": "Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents",
-        "hero.copy": "A state-grounded dual-loop framework that turns completed embodied trajectories into reusable skill, strategy, and safety experience—without updating model weights.",
+        "hero.copy": "LabEvolver couples a state-grounded inner trial loop for adaptive perception, online planning, and safety validation with an outer evolution loop that distills completed trajectories into reusable skill, strategy, and safety experience.",
         "hero.results": "Explore results",
         "hero.repository": "Repository",
         "hero.video": "Experiment video",
-        "overview.kicker": "Why LabEvolver",
-        "overview.title": "From static automation to learn-by-doing autonomy",
-        "overview.copy": "Real laboratories are dynamic physical environments. An autonomous agent must plan from changing states, respect instrument and safety constraints, and improve from costly trials. LabEvolver addresses all three requirements in a single training-free framework.",
+        "overview.kicker": "Toward automated scientific discovery",
+        "overview.title": "From state-valid control to learn-by-doing autonomy",
+        "overview.copy": "Autonomous laboratories should accumulate episodic memory from concrete operations so that planning, cognition, and action improve together through practice. LabEvolver operationalizes this capability through a nested dual-loop process.",
         "metric.alfworld": "cumulative Success@20 over 500 continual ALFWorld tasks",
         "metric.pouring": "successful locked-parameter pouring validations within ±0.2 g",
         "metric.ph": "lower mean pH-regulation completion time versus ReAct",
         "metric.phec": "less completion time for pH–EC control with full experience",
         "method.kicker": "Nested dual-loop framework",
-        "method.title": "Ground every action. Evolve every trial.",
+        "method.title": "State-grounded execution. Experience evolution.",
         "method.inner.title": "Inner Trial Loop",
         "method.inner.copy": "The Observer builds a hierarchical state from visual, sensor, and actuator feedback. The Operator maps goals to parameterized LabSkill actions, while a tri-layer safety gate checks interface validity, procedural consistency, and physical feasibility before dispatch.",
         "method.outer.title": "Outer Evolution Loop",
@@ -565,7 +567,7 @@
         "video.copy": "The annotated experiment video shows physical operations, sensor feedback, safety-aware execution, and closed-loop convergence.",
         "video.unsupported": "Your browser does not support HTML5 video.",
         "video.caption": "The annotated experiment video is hosted in the project's GitHub Release.",
-        "footer": "LabEvolver · Learning from Execution · Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents",
+        "footer": "LabEvolver · Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents",
         "alt.platform": "LabEvolver robotic wet-lab platform and pH-regulation comparison",
         "alt.framework": "Overview of the LabEvolver inner trial loop and outer evolution loop",
         "alt.alfworld": "ALFWorld cumulative success, cross-backbone results, and memory growth",
@@ -574,28 +576,28 @@
         "alt.phec": "pH and EC multi-objective regulation results"
       },
       zh: {
-        "meta.title": "LabEvolver — 从执行中学习",
-        "meta.description": "LabEvolver 是一个面向安全、状态落地湿实验智能体的免训练双循环框架，能够从执行中沉淀可复用经验。",
+        "meta.title": "LabEvolver — 面向安全且状态落地湿实验智能体的免训练经验演化",
+        "meta.description": "LabEvolver 是一个免训练框架，通过执行经验为安全且状态落地的湿实验智能体构建情景记忆。",
         "nav.overview": "概览",
         "nav.method": "方法",
         "nav.results": "结果",
         "nav.wetlab": "湿实验",
         "nav.video": "视频",
-        "hero.eyebrow": "从执行中学习 · 具身实验室智能体",
+        "hero.eyebrow": "状态落地执行 · 免训练经验演化",
         "hero.title": "面向安全且状态落地的湿实验智能体的免训练经验演化",
-        "hero.copy": "一种状态落地的双循环框架，将已完成的具身执行轨迹提炼为可复用的技能、策略与安全经验，无需更新模型权重。",
+        "hero.copy": "LabEvolver 将用于自适应感知、在线规划和安全验证的状态落地内层试验循环，与把完整轨迹提炼为可复用技能、策略和安全经验的外层演化循环相结合。",
         "hero.results": "查看结果",
         "hero.repository": "代码仓库",
         "hero.video": "实验视频",
-        "overview.kicker": "为什么选择 LabEvolver",
-        "overview.title": "从静态自动化走向边做边学的自主智能",
-        "overview.copy": "真实实验室是动态的物理环境。自主智能体需要根据不断变化的状态规划动作、遵守仪器与安全约束，并从成本高昂的试验中持续改进。LabEvolver 在一个免训练框架中同时满足这三项要求。",
+        "overview.kicker": "迈向自动化科学发现",
+        "overview.title": "从状态有效控制走向边做边学的自主智能",
+        "overview.copy": "自主实验室应从具体操作中积累情景记忆，使规划、认知与行动在实践中协同提升。LabEvolver 通过嵌套双循环过程将这一能力落到实际系统中。",
         "metric.alfworld": "在 500 个连续 ALFWorld 任务上的累计 Success@20",
         "metric.pouring": "在 ±0.2 g 误差内成功完成的锁定参数倾倒验证",
         "metric.ph": "相较 ReAct，pH 调节平均完成时间降低",
         "metric.phec": "完整经验下，pH–EC 控制完成时间降低",
         "method.kicker": "嵌套双循环框架",
-        "method.title": "让每个动作扎根状态，让每次试验沉淀经验",
+        "method.title": "状态落地执行，经验持续演化",
         "method.inner.title": "内层试验循环",
         "method.inner.copy": "Observer 根据视觉、传感器与执行器反馈构建层次化状态。Operator 将目标映射为参数化 LabSkill 动作；动作下发前，三层安全门依次检查接口有效性、流程一致性与物理可行性。",
         "method.outer.title": "外层演化循环",
@@ -652,7 +654,7 @@
         "video.copy": "注释版实验视频展示了物理操作、传感器反馈、安全感知执行与闭环收敛过程。",
         "video.unsupported": "你的浏览器不支持 HTML5 视频。",
         "video.caption": "注释版实验视频托管在本项目的 GitHub Release 中。",
-        "footer": "LabEvolver · 从执行中学习 · 面向安全且状态落地的湿实验智能体的免训练经验演化",
+        "footer": "LabEvolver · 面向安全且状态落地湿实验智能体的免训练经验演化",
         "alt.platform": "LabEvolver 机器人湿实验平台与 pH 调节对比",
         "alt.framework": "LabEvolver 内层试验循环与外层演化循环概览",
         "alt.alfworld": "ALFWorld 累计成功率、跨模型结果与记忆增长",
@@ -704,6 +706,12 @@
 
     const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
     applyLanguage(requestedLanguage || savedLanguage() || "en");
+    if (window.location.hash) {
+      requestAnimationFrame(() => {
+        const target = document.querySelector(window.location.hash);
+        if (target) target.scrollIntoView({ block: "start" });
+      });
+    }
   </script>
 </body>
 </html>
