@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/images/labevolver/labevolver-logo.png" alt="LabEvolver Logo" width="350">
+
 # 🧪 LabEvolver
 
 **Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents**
@@ -18,6 +20,16 @@
 
 ---
 
+## 🎥 Video Demonstration
+
+<div align="center">
+  <video src="https://github.com/AndyGao6186/LabEvolver/releases/download/video-1080p-0805/LabEvolver.1080p_0805.mp4" width="60%" controls></video>
+  <br>
+  <em>Watch LabEvolver perform state-grounded, closed-loop wet-lab experiments.</em>
+</div>
+
+---
+
 ## 📖 Overview
 
 **LabEvolver** equips safe and grounded wet-lab agents with episodic memory from execution experience. We introduce a novel **dual-loop framework**:
@@ -25,44 +37,56 @@
 1. **Inner Trial Loop 🔄**: Provides adaptive perception, online planning, and safety validation (Tri-layer Runtime Safety Gate) for robust execution.
 2. **Outer Evolution Loop 🧠**: Distills completed trajectories into reusable skill-level, strategy-level, and safety-level experience via the *Strategist* module.
 
-<p align="center">
-  <!-- Place your main teaser figure here. We reference the latest paper figures directory -->
-  <img src="assets/images/labevolver/figure2_framework.png" alt="LabEvolver Framework" width="90%">
-</p>
+<div align="center">
+  <img src="assets/images/labevolver/framework-overview.png" alt="LabEvolver Framework" width="90%">
+</div>
 
 ---
 
-## ✨ Key Highlights
+## ✨ Hardware Platform & Key Highlights
 
-- 📈 **ALFWorld Continual Evaluation**: Improved cumulative success rate within 20 steps from 76.2% (ReAct) to **91.4%** over 500 continual long-horizon tasks.
-- 🚰 **Transferable Quantitative-Pouring**: Learns and transfers precise pouring skills across different target masses and liquids (water, sucrose, olive oil) via physical feedback.
-- 🧪 **Closed-Loop pH Regulation**: Reduces pH-regulation completion time by 48.2% and safety-gate intercepts by 60.0% in real-world wet-lab environments.
-- ⚗️ **Coupled pH–EC Multi-Objective Regulation**: Handles complex multi-objective interactions by reusing high-relevance joint trajectory experience.
+Our system connects foundation models with real-world physical execution. 
 
----
+<div align="center">
+  <img src="assets/images/labevolver/hardware-platform.png" alt="Hardware Platform" width="80%">
+</div>
 
-## 🎥 Video Demonstration
+### 📈 ALFWorld Continual Evaluation
+LabEvolver improves training-free long-horizon decision-making. Over 500 continual long-horizon tasks, it improved the cumulative success rate within 20 steps from 76.2% (ReAct) to **91.4%**.
 
-<!-- Embed a GIF here for immediate visual impact -->
-<p align="center">
-  <img src="assets/images/labevolver/demo.gif" alt="LabEvolver Demo" width="80%">
-</p>
+<div align="center">
+  <img src="assets/images/labevolver/alfworld-results.png" alt="ALFWorld Results" width="70%">
+</div>
 
-> 💡 **Full Video:** The complete annotated experiment video is available in our [v1.0 GitHub Release](https://github.com/USER/LabEvolver/releases/tag/video-v1).
+### 🚰 Transferable Quantitative-Pouring
+The framework learns and transfers precise pouring skills across different target masses and liquids (water, sucrose, olive oil) relying purely on physical feedback.
+
+<div align="center">
+  <img src="assets/images/labevolver/pouring-transfer.png" alt="Pouring Transfer Results" width="70%">
+</div>
+
+### 🧪 Closed-Loop pH & Coupled pH–EC Multi-Objective Regulation
+In real-world wet-lab environments, LabEvolver reduces pH-regulation completion time by 48.2% and safety-gate intercepts by 60.0%. It also seamlessly handles complex multi-objective interactions (coupled pH-EC) by reusing high-relevance joint trajectory experience.
+
+<div align="center">
+  <img src="assets/images/labevolver/ph-closed-loop.png" alt="pH Closed Loop Demo" width="48%">
+  <img src="assets/images/labevolver/ph-ec-results.png" alt="Coupled pH-EC Results" width="48%">
+</div>
 
 ---
 
 ## 📂 Repository Structure
 
-The current structure hosts our project page and assets. The codebase will be structured as follows upon release:
+The current structure hosts our project page and visual assets. The codebase will be structured as follows upon release:
 
 ```text
 LabEvolver/
-├── index.html                   # GitHub Pages project homepage (English/Chinese w/ language switcher)
+├── index.html                   # GitHub Pages project homepage (English/Chinese)
 ├── assets/
 │   ├── images/
-│   │   └── labevolver/          # Latest paper figures
-│   └── ...                      # Existing historical figures
+│   │   ├── branding/            # Logos and institutional assets
+│   │   ├── labevolver/          # Latest paper figures and highlights
+│   │   └── ... 
 ├── core/                        # [Code Coming Soon] Inner trial & outer evolution loop implementation
 ├── envs/                        # [Code Coming Soon] Interfaces for robotic wet-lab & ALFWorld
 └── scripts/                     # [Code Coming Soon] Evaluation and execution scripts
