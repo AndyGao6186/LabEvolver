@@ -2,8 +2,6 @@
 
 <img src="assets/images/labevolver/labevolver-logo.png" alt="LabEvolver Logo" width="350">
 
-# 🧪 LabEvolver
-
 **Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents**
 
 [![arXiv](https://img.shields.io/badge/arXiv-2607.27690-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2607.27690)
@@ -106,6 +104,3 @@ If you find our work helpful, please consider citing our paper:
   year={2026}
 }
 ```
-
-## 🤝 Acknowledgements
-This project is developed by researchers at the School of AI for Science and School of Computer Science, Peking University. 
