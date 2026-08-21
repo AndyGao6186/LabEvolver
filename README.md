@@ -69,8 +69,9 @@ The framework learns and transfers precise pouring skills across different targe
 In real-world wet-lab environments, LabEvolver reduces pH-regulation completion time by 48.2% and safety-gate intercepts by 60.0%. It also seamlessly handles complex multi-objective interactions (coupled pH-EC) by reusing high-relevance joint trajectory experience.
 
 <div align="center">
-  <img src="assets/images/labevolver/ph-closed-loop.png" alt="pH Closed Loop Demo" width="48%">
-  <img src="assets/images/labevolver/ph-ec-results.png" alt="Coupled pH-EC Results" width="48%">
+  <img src="assets/images/labevolver/ph-closed-loop.png" alt="pH Closed Loop Demo" width="75%">
+  <br><br>
+  <img src="assets/images/labevolver/ph-ec-results.png" alt="Coupled pH-EC Results" width="75%">
 </div>
 
 ---
