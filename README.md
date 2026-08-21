@@ -13,7 +13,7 @@
 </div>
 
 ## 📣 News
-- **[Coming Soon]** 💻 The full training and evaluation code will be open-sourced soon! Please ⭐ star this repository and stay tuned for updates.
+- **[Coming Soon]** 💻 The full implementation and evaluation code will be open-sourced soon! Please ⭐ star this repository and stay tuned for updates.
 - **[2026.07]** 📄 Our paper is available on [arXiv](https://arxiv.org/abs/2607.27690)! 
 
 ---
