@@ -71,7 +71,7 @@ In real-world wet-lab environments, LabEvolver reduces pH-regulation completion 
 <div align="center">
   <img src="assets/images/labevolver/ph-closed-loop.png" alt="pH Closed Loop Demo" width="75%">
   <br><br>
-  <img src="assets/images/labevolver/ph-ec-results.png" alt="Coupled pH-EC Results" width="75%">
+  <img src="assets/images/labevolver/ph-ec-results-horizontal.png" alt="Coupled pH-EC Results" width="95%">
 </div>
 
 ---
