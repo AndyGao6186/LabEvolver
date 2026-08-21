@@ -21,11 +21,11 @@
 ## 🎥 Video Demonstration
 
 <div align="center">
-  <a href="https://github.com/AndyGao6186/LabEvolver/releases/download/video-1080p-0821/LabEvolver.1080P.0821.mp4">
+  <a href="https://andygao6186.github.io/LabEvolver/">
     <img src="assets/images/labevolver/labevolver-demo-0821.gif" alt="LabEvolver video demonstration" width="60%">
   </a>
   <br>
-  <em>Watch LabEvolver perform state-grounded, closed-loop wet-lab experiments. Click the preview to watch the full 1080p video.</em>
+  <em>Watch LabEvolver perform state-grounded, closed-loop wet-lab experiments. Click the preview to visit the project page.</em>
 </div>
 
 ---
