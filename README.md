@@ -22,7 +22,7 @@
 
 <div align="center">
   <a href="https://andygao6186.github.io/LabEvolver/">
-    <img src="assets/images/labevolver/labevolver-demo-0821.gif" alt="LabEvolver video demonstration" width="60%">
+    <img src="assets/images/labevolver/labevolver-demo-logo-0821.gif" alt="LabEvolver video demonstration" width="60%">
   </a>
   <br>
   <em>Watch LabEvolver perform state-grounded, closed-loop wet-lab experiments. Click the preview to visit the project page.</em>
